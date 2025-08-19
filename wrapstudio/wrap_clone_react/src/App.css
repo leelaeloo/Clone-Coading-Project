@@ -1,0 +1,173 @@
+.App {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f5f3f8;
+  color: #1e1e1e;
+  line-height: 1.6;
+}
+
+/* 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-button {
+  background-color: #2f245f;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #211943;
+}
+
+/*메인 */
+.main-content {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+/* 메인 글씨 */
+.main-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #1e1e1e;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #3600ff;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.description .emphasis {
+  color: #3600ff;
+  font-weight: bold;
+}
+
+/* 버튼 디자인 */
+.cta-button {
+  display: inline-block;
+  margin-top: 40px;
+  background-color: #3600ff;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+/* 버튼 호버 색깔 */
+.cta-button:hover {
+  background-color: #2400b8;
+}
+
+/* 슬라이더 섹션 */
+.chat-slider-section {
+  padding: 60px 20px;
+  background-color: #f5f3f8;
+}
+
+.swiper {
+  padding: 10px 20px;
+}
+
+/* Swiper 슬라이드 기본 */
+.swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+  max-width: 350px;
+}
+
+
+/* 카드 디자인 */
+.chat-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 200%;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 말풍선 */
+.chat-bubble {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 0.95rem;
+  max-width: 85%;
+  word-break: keep-all;
+}
+
+/* Client 말풍선 */
+.chat-bubble.client {
+  background-color: #f4f0fb;
+  align-self: flex-start;
+  text-align: left;
+}
+
+/* WrapStudio 말풍선 */
+.chat-bubble.wrapstudio {
+  background-color: #e7ddfd;
+  align-self: flex-end;
+  text-align: right;
+}
+
+/* 밑에 시간 */
+.chat-bubble small {
+  display: block;
+  margin-top: 8px;
+  color: #888;
+  font-size: 0.75rem;
+}
+
+/* 카드 */
+.card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .main-content h1 {
+    font-size: 2rem;
+  }
+  .chat-card {
+    max-width: 280px;
+  }
+}
